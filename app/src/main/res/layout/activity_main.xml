@@ -68,7 +68,7 @@
         android:layout_width="150sp"
         android:layout_height="35dp"
         android:background="@drawable/buttonshape"
-        android:text="Send 1"
+        android:text="Change direction"
         android:id="@+id/btn_send1"
         android:layout_above="@+id/btn_send2"
         android:layout_alignParentStart="true"
@@ -80,7 +80,7 @@
         android:layout_width="150sp"
         android:layout_height="35dp"
         android:background="@drawable/buttonshape"
-        android:text="Send 2"
+        android:text="START/STOP"
         android:id="@+id/btn_send2"
         android:layout_alignTop="@+id/btn_send4"
         android:layout_alignParentStart="true" />
@@ -91,7 +91,7 @@
         android:layout_width="150sp"
         android:layout_height="35dp"
         android:background="@drawable/buttonshape"
-        android:text="Send 3"
+        android:text="Speed up"
         android:id="@+id/btn_send3"
         android:layout_alignTop="@+id/btn_send1"
         android:layout_alignParentEnd="true" />
@@ -102,7 +102,7 @@
         android:layout_width="150sp"
         android:layout_height="35dp"
         android:background="@drawable/buttonshape"
-        android:text="Send 4"
+        android:text="Speed down"
         android:id="@+id/btn_send4"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
