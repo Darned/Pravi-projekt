@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimaryLight"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dnedic.arduinobluetoothremote.MainActivity">
+
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="170sp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:text="Enable Bluetooth"
+        android:id="@+id/btn_enableBT"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btn_send1" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="180sp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:text="Scan for devices"
+        android:id="@+id/btn_scanfordevices"
+        android:layout_below="@+id/btn_enableBT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="170sp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:text="Disable Bluetooth"
+        android:id="@+id/btn_disableBT"
+        android:layout_above="@+id/btn_scanfordevices"
+        android:layout_alignStart="@+id/btn_send3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Scanned devices:"
+        android:id="@+id/tv_scanneddevices"
+        android:layout_below="@+id/btn_scanfordevices"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_scanneddevices"
+        android:layout_below="@+id/tv_scanneddevices"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="90dp" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="150sp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:text="Send 1"
+        android:id="@+id/btn_send1"
+        android:layout_above="@+id/btn_send2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="150sp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:text="Send 2"
+        android:id="@+id/btn_send2"
+        android:layout_alignTop="@+id/btn_send4"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="150sp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:text="Send 3"
+        android:id="@+id/btn_send3"
+        android:layout_alignTop="@+id/btn_send1"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="150sp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:text="Send 4"
+        android:id="@+id/btn_send4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
