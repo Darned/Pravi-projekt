@@ -9,7 +9,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,12 +35,11 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_DEVICE_ADRESS = "device_address";
     private int REQUEST_ENABLE_BT = 1;
     private BluetoothAdapter mBluetoothAdapter;
-    private ArrayAdapter PairedDeviceAdapter;
+
     private ArrayAdapter ScannedDeviceAdapter;
 
     private Button btn_enableBT;
     private Button btn_disableBT;
-    private Button btn_showpaired;
     private Button btn_scanfordevices;
     private Button btn_send1;
     private Button btn_send2;
@@ -97,14 +95,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*
-        btn_showpaired.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showPairedDevices();
-            }
-        });
-*/
         btn_scanfordevices.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -208,26 +198,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-   /*
-    //Showing paired devices
-    private void showPairedDevices() {
-
-
-        PairedDeviceAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
-
-        for (BluetoothDevice device : pairedDevices) {
-            PairedDeviceAdapter.add(device.getName() + "\n" + device.getAddress());
-        }
-        Toast.makeText(this, "Showing paired devices", Toast.LENGTH_SHORT).show();
-
-
-        lv_pairedDevices.setAdapter(PairedDeviceAdapter);
-
-
-    }
-*/
-
 
     //Scanning for devices
     private void scanforDevices() {
